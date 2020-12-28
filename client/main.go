@@ -57,5 +57,5 @@ func main() {
 	if _, err = http.Post(endpoint, "application/json", bytes.NewReader(b)); err != nil {
 		panic(err)
 	}
-	fmt.Println("your ip has been authorized for an hour")
+	fmt.Println("your ip has been authorized for ", hour, " hour")
 }

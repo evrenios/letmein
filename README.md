@@ -2,18 +2,18 @@
 
 ![Default Slack Notifier](https://opensource.useinsider.com/letmein/images/letmein_image.png)
 
-Letmein is a server-client coombination service where you can temporarly add a new IP to a pre-defined security groups for a custom time window.
+Letmein is a server-client combination service where you can temporarily add a new IP to a predefined security groups for a custom time window.
 
-When timer ends, added IP is automatically gets removed. 
+When the timer ends, added IP automatically gets removed. 
 
-When the program crash or exits, it also gracefully clean up temporary ip blocks so they never become stale. 
+When the program crashes or exits, it also gracefully cleans up temporary ip blocks so they never become stale. 
 
 It also have a builtin slack notifier and a restricted ip blocks so you can prevent accidental ip additions/removals such as your corporate VPN or static home IP blocks.
 
 ![IP Restriction](https://opensource.useinsider.com/letmein/images/letmein_restricted.png)
 
 
-You can download pre-built executables and run them immediatly or you can build it on your own to run on a k8 cluster or as a docker build.
+You can download pre-built executables and run them immediately or you can build it on your own to run on a k8 cluster or as a docker build.
 
 
 | Variable | Example |
