@@ -39,7 +39,7 @@ You can download pre-built executables and run them immediatly or you can build 
 #### Client
 * Mac 64-bit: https://opensource.useinsider.com/letmein/server/darwin_letmein_client
   ```
-  $ curl https://opensource.useinsider.com/letmein/server/darwin_letmein_server > letmein_server && chmod +x letmein_client
+  $ curl https://opensource.useinsider.com/letmein/server/darwin_letmein_client > letmein_client && chmod +x letmein_client
   ```
 * Linux 64-bit: https://opensource.useinsider.com/letmein/server/linux_letmein_client
 * Windows 64-bit: https://opensource.useinsider.com/letmein/server/windows_letmein_client
