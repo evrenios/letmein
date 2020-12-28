@@ -24,7 +24,8 @@ You can download pre-built executables and run them immediatly or you can build 
 | SLACK_ICON_EMOJI    | :cookie: |
 | SLACK_USERNAME    | WARDEN |
 | BANLIST    | 192.168.2.1,127.0.0.1 |
-| BANLIST    | us-east-1 |
+| SG_PORTS    | sg-xxxxx:80,sg-yyyyy:3306,sg-zzzzz:6379 |
+| AWS_REGION    | us-east-1 |
 
 
 ## Installation
@@ -37,9 +38,14 @@ You can download pre-built executables and run them immediatly or you can build 
 * Windows 64-bit: https://opensource.useinsider.com/letmein/server/windows_letmein_server
 
 #### Client
-* Mac 64-bit: https://opensource.useinsider.com/letmein/server/darwin_letmein_client
+* Mac 64-bit: https://opensource.useinsider.com/letmein/client/darwin_letmein_client
   ```
-  $ curl https://opensource.useinsider.com/letmein/server/darwin_letmein_client > letmein_client && chmod +x letmein_client
+  $ curl https://opensource.useinsider.com/letmein/client/darwin_letmein_client > letmein_client && chmod +x letmein_client
   ```
-* Linux 64-bit: https://opensource.useinsider.com/letmein/server/linux_letmein_client
-* Windows 64-bit: https://opensource.useinsider.com/letmein/server/windows_letmein_client
+* Linux 64-bit: https://opensource.useinsider.com/letmein/client/linux_letmein_client
+* Windows 64-bit: https://opensource.useinsider.com/letmein/client/windows_letmein_client
+
+## Usage
+```
+./letmein_client -endpoint http://YOUR.ENDPOINT.HERE/WITH/SERVER/LISTENING -hour 10
+```

@@ -15,6 +15,7 @@ import (
 func main() {
 	var hour int
 	var endpoint string
+
 	flag.IntVar(&hour, "hour", 1, "")
 	flag.StringVar(&endpoint, "endpoint", "", "Specifcy the endpoint that your service is listening")
 	flag.Parse()

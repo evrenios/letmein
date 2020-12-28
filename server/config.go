@@ -21,9 +21,10 @@ type config struct {
 
 func generate() *config {
 	c := &config{
-		currentSet: make(map[int64]*misc.AuthReq),
-		slacker:    newSlackNotifier(),
-		errChan:    make(chan error, 0),
+		currentSet:    make(map[int64]*misc.AuthReq),
+		slacker:       newSlackNotifier(),
+		errChan:       make(chan error, 0),
+		restrictedIPs: make(map[string]struct{}),
 	}
 	c.loadENV()
 	go c.readErrors()
@@ -40,6 +41,10 @@ func (c *config) loadENV() {
 
 	fmt.Println("Restricted IPs -> ", c.Banlist)
 	fmt.Println("Security Groupts with Ports to add -> ", c.SGPorts)
+
+	if len(c.SGPorts) == 0 {
+		panic("there is no given security group for server to add, exiting...")
+	}
 }
 
 func (c *config) readErrors() {
